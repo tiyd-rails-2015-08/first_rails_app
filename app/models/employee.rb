@@ -1,6 +1,7 @@
 class Employee < ActiveRecord::Base
   belongs_to :department
   validates :salary, presence: true
+  validates :name, uniqueness: true
 
   def satisfactory?
     satisfactory
