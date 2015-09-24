@@ -4,6 +4,7 @@ class DepartmentsController < ApplicationController
   end
 
   def show
-    render json: Department.find(params[:id])
+    # @department = Department.find(params[:id])
+    @pig = Pig.new(params[:snout], params[:taste])
   end
 end
