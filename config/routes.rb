@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  get 'departments/index'
+
+  get 'departments/show'
+
   get 'employees/index'
   get 'employees/show'
   post 'employees/create'
